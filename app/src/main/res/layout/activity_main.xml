@@ -17,9 +17,12 @@
         android:layout_marginTop="50dp"
         android:id="@+id/instructions"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/editText"
-        android:layout_alignEnd="@+id/editText"
-        android:textAlignment="center" />
+        android:layout_alignStart="@+id/nthPowerField"
+        android:layout_alignEnd="@+id/nthPowerField"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:typeface="normal" />
 
     <Button
         android:text="@string/calculate_button"
@@ -28,8 +31,8 @@
         android:layout_marginStart="32dp"
         android:layout_marginBottom="71dp"
         android:id="@+id/calculate"
-        android:layout_above="@+id/editText2"
-        android:layout_alignStart="@+id/editText"
+        android:layout_above="@+id/resultField"
+        android:layout_alignStart="@+id/nthPowerField"
         android:textAlignment="center" />
 
     <EditText
@@ -38,7 +41,7 @@
         android:inputType="numberSigned"
         android:ems="10"
         android:layout_marginBottom="89dp"
-        android:id="@+id/editText2"
+        android:id="@+id/resultField"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/pi_to_the_nth_result"
@@ -51,10 +54,10 @@
         android:inputType="numberSigned"
         android:ems="10"
         android:layout_marginBottom="45dp"
-        android:id="@+id/editText"
+        android:id="@+id/nthPowerField"
         android:layout_above="@+id/calculate"
-        android:layout_alignEnd="@+id/editText2"
-        android:layout_alignStart="@+id/editText2"
+        android:layout_alignEnd="@+id/resultField"
+        android:layout_alignStart="@+id/resultField"
         android:text="@string/nth_power"
         android:textAlignment="center" />
 </RelativeLayout>
