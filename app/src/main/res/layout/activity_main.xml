@@ -11,7 +11,50 @@
     tools:context="com.hamiltonchevez.pitothenth.MainActivity">
 
     <TextView
+        android:text="@string/instructions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_marginTop="50dp"
+        android:id="@+id/instructions"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="@string/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="71dp"
+        android:id="@+id/calculate"
+        android:layout_above="@+id/editText2"
+        android:layout_alignStart="@+id/editText"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:layout_marginBottom="89dp"
+        android:id="@+id/editText2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/pi_to_the_nth_result"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:layout_marginBottom="45dp"
+        android:id="@+id/editText"
+        android:layout_above="@+id/calculate"
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:text="@string/nth_power"
+        android:textAlignment="center" />
 </RelativeLayout>
